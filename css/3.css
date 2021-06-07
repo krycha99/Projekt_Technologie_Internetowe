@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: 'Banthers';
+    src: url('Banthers.otf');
+  }
+/*główne*/
+  body {
+    margin: 0px;
+  }
+
+  #header {
+    text-align:center;
+    font-family: Banthers;
+    font-size:40px;
+    background-color: lightgrey;
+    padding-bottom: 10px;
+  }
+
+  #left {
+    float:left;
+    width:50%;
+  }
+  
+  #right {
+    float:left;
+    width:50%;
+  }
+  #srodek {
+      padding-left: 10px;
+      padding-right:10px;
+  }
+
+  #footer {
+    background-color:#e5e5e5;
+    text-align:center;
+    padding:10px;
+    margin-top:7px;
+  }
+/*menu*/
+
+  #homeimg {
+    height: 40px;
+    width: 40px;
+  }
+
+/*obrazki*/
+
+  #zasady {
+      width:100%;
+  }
+
+  @media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    #left, #right {
+      width:100%;
+    }
+  }

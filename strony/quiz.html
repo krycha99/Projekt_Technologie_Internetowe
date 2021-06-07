@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Typografia</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div id="header">Typografia</div>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+                <a class="navbar-brand" href="index.html"><img src="../obrazy/home.png" id="homeimg"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="pzt.html">Podstawowe zasady typografii</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="typografiaadoz.html">Typografia od a do z</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="13zasad.html">13 zasad typografii</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>    
+                  </ul>
+                </div>  
+              </nav>
+    <div style="overflow:auto">
+        <div id="srodek">
+<SCRIPT LANGUAGE="JavaScript1.3"><!--
+var numPyt =15;
+var numWyb = 2;
+var odpowiedz = new Array(15);
+var odpowiedz = new Array('a','b','b','b','a','b','a','b','a','b','a','b','a','b','a');
+function zobaczWynik(form) {
+var score = 0;
+var currElt;
+var currSelection;
+for (i=0; i<numPyt; i++) {
+currElt = i*numWyb;
+for (j=0; j<numWyb; j++) {
+currSelection = form.elements[currElt + j];
+if (currSelection.checked) {
+if (currSelection.value == odpowiedz[i]) {
+score++;
+break;
+}
+}
+}
+}
+score = Math.round(score/numPyt*100);
+form.percentage.value = score + "%";
+var correctodpowiedz = "";
+for (i=1; i<=numPyt; i++) {
+correctodpowiedz += i + ". " + odpowiedz[i-1] + "\r\n";
+}
+form.wyniki.value = correctodpowiedz;
+}
+// --></SCRIPT></P>
+
+<P><FORM NAME="quiz"></P>
+
+<P><B>1. Co to jest czcionka?</B><BR><BR>
+
+    <INPUT type=radio name="1" value="a">metalowy nośnik pojedynczych znaków pisma drukarskiego<BR>
+    <INPUT type=radio name="1" value="b">unikalny wygląd rodziny znaków pisma o wspólnych charakterystycznych cechach, jak kształt, rytm, proporcje. Przykładowe kroje: Arial, Raleway, Times New Roman.</P>
+
+<P><B>2. Co to jest font?</B><BR><BR>
+
+    <INPUT type=radio name="2" value="a">wielkie litery alfabetu<BR>
+    <INPUT type=radio name="2" value="b">cyfrowy zapis kroju pisma, opisujący jego właściwości. Font umożliwia wyświetlenie kroju na nośnikach elektronicznych, jak monitor, smartfon itd</P>
+
+<P><B>3. Co to jest krój pisma?</B><BR><BR>
+
+    <INPUT type=radio name="3" value="a">wiszący spójnik,  samotny znak, zazwyczaj spójnik na końcu wersu<BR>
+    <INPUT type=radio name="3" value="b">unikalny wygląd rodziny znaków pisma o wspólnych charakterystycznych cechach, jak kształt, rytm, proporcje. Przykładowe kroje: Arial, Raleway, Times New Roman</P>
+
+<P><B>4. Co to są majuskuły (wersalki)?</B><BR><BR>
+
+    <INPUT type=radio name="4" value="a">błąd w składzie tekstu, pozostawienie na początku łamu lub strony niepełnego wiersza akapitu, krótkiego słowa<BR>
+    <INPUT type=radio name="4" value="b">wielkie litery alfabetu</P>
+
+<P><B>5. Czym są kapitałki</B><BR><BR>
+
+    <INPUT type=radio name="5" value="a">czcionka o wyglądzie wielkich liter, lecz o wielkości i grubości liter małych, bez wydłużeń górnych i dolnych<BR>
+    <INPUT type=radio name="5" value="b">błąd w składzie tekstu, polegający na pozostawieniu na końcu strony jednego krótkiego słowa lub końcówki przenoszonego słowa</P>
+
+<P><B>6. Czym jest kerning?</B><BR><BR>
+
+    <INPUT type=radio name="6" value="a">błąd w składzie tekstu, polegający na pozostawieniu na końcu akapitu lub łamu zwykle jednego krótkiego słowa lub końcówki przenoszonego słowa<BR>
+    <INPUT type=radio name="6" value="b">regulowanie światła pomiędzy literami poprzez zmianę odległości między nimi. Wyróżniamy kerning ujemny i dodatni. Najczęściej stosujemy kerning ujemny, czyli dosuwanie do siebie znaków. Kerning szczególnie wykorzystywany jest podczas projektowania logotypów</P>
+
+<P><B>7. Co to jest tracking?</B><BR><BR>
+
+    <INPUT type=radio name="7" value="a">równomierne odsuwanie bądź przybliżanie do siebie znaków<BR>
+    <INPUT type=radio name="7" value="b">rozmieszczenie wierszy kolumn tak, aby były na tej samej wysokości, na tej samej stronie lub dwóch sąsiednich</P>
+
+<P><B>8. Co to jest akapit?</B><BR><BR>
+
+    <INPUT type=radio name="8" value="a">pozioma linia, stanowiąca podstawę ułożenia tekstu, na której opierają się majuskuły i minuskuły bez wydłużeń dolnych<BR>
+    <INPUT type=radio name="8" value="b">jednostka logiczna dłuższego tekstu, wcięcie tekstu na początku myśli. Warto pamiętać, gdy zdecydujemy się na zastosowanie wcięcia akapitowego, nie używamy już wtedy odstępu między akapitowego</P>
+
+<P><B>9. Co to jest justowanie?</B><BR><BR>
+
+    <INPUT type=radio name="9" value="a">wyrównywanie położenia wierszy tekstu. Tekst można wyrównać do jednej ze stron (lewej lub prawej) albo obydwu marginesów<BR>
+    <INPUT type=radio name="9" value="b">jednostka logiczna dłuższego tekstu, wcięcie tekstu na początku myśli. Warto pamiętać, gdy zdecydujemy się na zastosowanie wcięcia akapitowego, nie używamy już wtedy odstępu między akapitowego</P>
+
+<P><B>10. Co to jest linia bazowa?</B><BR><BR>
+
+    <INPUT type=radio name="10" value="a">wyrównywanie położenia wierszy tekstu. Tekst można wyrównać do jednej ze stron (lewej lub prawej) albo obydwu marginesów<BR>
+    <INPUT type=radio name="10" value="b">pozioma linia, stanowiąca podstawę ułożenia tekstu, na której opierają się majuskuły i minuskuły bez wydłużeń dolnych</P>
+
+<P><B>11. Co to jest register?</B><BR><BR>
+
+    <INPUT type=radio name="11" value="a">rozmieszczenie wierszy kolumn tak, aby były na tej samej wysokości, na tej samej stronie lub dwóch sąsiednich<BR>
+    <INPUT type=radio name="11" value="b">równomierne odsuwanie bądź przybliżanie do siebie znaków</P>
+
+<P><B>12. Co to jest wdowa?</B><BR><BR>
+
+    <INPUT type=radio name="12" value="a">regulowanie światła pomiędzy literami poprzez zmianę odległości między nimi. Wyróżniamy kerning ujemny i dodatni. Najczęściej stosujemy kerning ujemny, czyli dosuwanie do siebie znaków. Kerning szczególnie wykorzystywany jest podczas projektowania logotypów<BR>
+    <INPUT type=radio name="12" value="b">błąd w składzie tekstu, polegający na pozostawieniu na końcu akapitu lub łamu zwykle jednego krótkiego słowa lub końcówki przenoszonego słowa</P>
+
+<P><B>13. Czym jest szewc?</B><BR><BR>
+
+    <INPUT type=radio name="13" value="a">błąd w składzie tekstu, polegający na pozostawieniu na końcu strony jednego krótkiego słowa lub końcówki przenoszonego słowa<BR>
+    <INPUT type=radio name="13" value="b">czcionka o wyglądzie wielkich liter, lecz o wielkości i grubości liter małych, bez wydłużeń górnych i dolnych</P>
+
+<P><B>14.  Czym jest bękart?</B><BR><BR>
+
+    <INPUT type=radio name="14" value="a">litera tekstowa, mała litera alfabetu<BR>
+    <INPUT type=radio name="14" value="b">błąd w składzie tekstu, pozostawienie na początku łamu lub strony niepełnego wiersza akapitu, krótkiego słowa</P>
+
+<P><B>15. Co to jest sierotka?</B><BR><BR>
+
+    <INPUT type=radio name="15" value="a">wiszący spójnik,  samotny znak, zazwyczaj spójnik na końcu wersu<BR>
+    <INPUT type=radio name="15" value="b">wielkie litery alfabetu</P>
+
+<P align="center">
+
+    <INPUT TYPE="button"  VALUE="Zobacz wynik" ONCLICK="zobaczWynik(this.form)">
+
+    <br><br>
+
+    <INPUT TYPE="reset"  VALUE="Wyczysc odpowiedzi">
+
+</P>
+
+<hr size=1 color="black">
+
+<P>Twoj wynik: <INPUT TYPE="text" SIZE="7" NAME="percentage"></P>
+
+
+
+<CENTER><P></FORM></P></CENTER>
+        </div>
+        
+    </div>
+    <div id="footer">© copyright by Karol Suchta, Jarosław Urbaniak, Krystian Sudoł</div>
+</body>
+</html>
